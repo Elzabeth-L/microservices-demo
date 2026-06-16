@@ -43,6 +43,76 @@ spec:
   - matches:
     - path:
         type: PathPrefix
+        value: /adservice
+    backendRefs:
+    - name: adservice
+      port: 9555
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /cartservice
+    backendRefs:
+    - name: cartservice
+      port: 7070
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /checkoutservice
+    backendRefs:
+    - name: checkoutservice
+      port: 5050
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /currencyservice
+    backendRefs:
+    - name: currencyservice
+      port: 7000
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /emailservice
+    backendRefs:
+    - name: emailservice
+      port: 5000
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /paymentservice
+    backendRefs:
+    - name: paymentservice
+      port: 50051
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /productcatalogservice
+    backendRefs:
+    - name: productcatalogservice
+      port: 3550
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /recommendationservice
+    backendRefs:
+    - name: recommendationservice
+      port: 8080
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /shippingservice
+    backendRefs:
+    - name: shippingservice
+      port: 50051
+  - matches:
+    - path:
+        type: PathPrefix
+        value: /frontend
+    backendRefs:
+    - name: frontend
+      port: 80
+  - matches:
+    - path:
+        type: PathPrefix
         value: /
     backendRefs:
     - name: frontend
